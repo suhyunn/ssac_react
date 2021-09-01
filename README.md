@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# ssac_react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# React 로컬 개발
 
-In the project directory, you can run:
+## 소프트웨어 & 라이브러리 설치
 
-### `yarn start`
+- node.js 설치 / 버전 확인 (node --version)
+- npm(node package manager) 버전 확인(npm --version)
+- yarn 설치(npm install --g yarn) / 버전 확인(yarn --version)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### unix/dos 명령어
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- clear / cls
+- ls, ls -l / dir
+- cd [폴더이름]
+- pwd / cd
+- mkdir / md
 
-### `yarn test`
+### Visual Studio Code
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 설치
 
-### `yarn build`
+### React 프로젝트 설치
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npx create-react-app [폴더이름]
+- 폴더 이름 : . -> 현재폴더
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### React 파일 흐름
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- node module : node.js module folder
+- public : 실제 브라우저에 표시되는 리소스들이 저장되는 폴더
+- src : html 파일에 반영되는(렌더링) 콘텐츠, 기능이 구현되어 있는 파일들이 저장되어 있는 폴더
+- index.html <= index.js <= App.js(component)
 
-### `yarn eject`
+## React
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- 공식 문서 : https://ko.reactjs.org/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## React의 특징
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Virtual DOM
+- SPA(Single Page Application)
+- component : 작은 단위로 나누어준 코드 블록(단위, 조각)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### JSX(Javascript Syntax Extension / Javascript XML)
 
-## Learn More
+- HTML 마크업 언어를 별다른 기호 사용없이 그대로 Javascript 사용할 수 있는 것
+- Babel.js 라이브러리가 JSX를 사용가능하게 해줌
+- JSX는 return 키워드 ()안에 하나의 Element영역으로 그룹화 되어 있어야 함
+- 하나의 영역으로 그룹화 할 때 특정 Element로 그룹화 해서 반영하지 않을 때 -> Fragment 사용
+- JSX에서 자바스크립트 변수 값 사용하기
+    - {변수이름}
+- JSX에서 class, id 지정하기
+    - class : className 속성 사용
+    - id : id 속성 사용
+- JSX 주석 : {/* 주석내용 */}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 구조 분해 할당
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Todo App
+https://dev.to/hariramjp777/todo-app-using-html-css-and-js-local-storage-design-html-and-css-1m0j
