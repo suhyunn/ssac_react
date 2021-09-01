@@ -1,0 +1,40 @@
+.todo-item {
+    padding: 20px;
+    background-color:burlywood;
+    display: flex;
+    border-bottom: 1px solid floralwhite;
+}
+
+.check {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.text {
+    font-family: SDMiSaeng, sans-serif;
+    height: 24px;
+    line-height: 30px;
+    padding: 0;
+    color: #ffffff;
+    font-size: 24px;
+    flex: 1; 
+}
+
+.del {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);  
+    /* deg : degree */
+}
