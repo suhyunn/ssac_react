@@ -34,9 +34,11 @@
         }
         printCar(car);
 
-        function viewCar(){
-            console.log();
+        function viewCar({name, color, weight}){
+            console.log(name, color, weight);
         }
+
+        viewCar(car);
 
     </script>
 </body>
