@@ -1,18 +1,22 @@
-function ListItem({value}) {
+function ListItem({car, removeText}) {
     return(
         <li>
-            {value.name} - {value.color}
+        <sapn>{car.carname} : {car.color}</sapn>
+        <button type="button" onClick={function(){return(removeText(car.id));}}>삭제</button>
         </li>
     );
 }
 
-function HookArray({carArray}) {
+
+
+function HookArray({carArray, removeText}) {
 
     return(
         <ul>
-            {carArray.map((car)=>{
+            {/* map함수가 데이터를 가져와서 자동으로 동적 표시 */}
+            {carArray.map(function(car){
                 return(
-                    <ListItem value={car} key={car.id} />
+                   <ListItem car={car} key={car.id} removeText={removeText}/>
                 );
             })}
         </ul>
